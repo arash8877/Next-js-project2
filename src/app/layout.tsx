@@ -29,8 +29,7 @@ export default function RootLayout({
   );
 }
 
-
 // Layout is a UI that is shared between multiple pages in the app
-// in route localhost:3000, the {children} refers to app -> page.tsx -> Home component
-// in route localhost:3000/about, the {children} refers to app -> about -> page.tsx 
+// in route localhost:3000, the {children} refers to:         app -> page.tsx -> Home component
+// in route localhost:3000/about, the {children} refers to:   app -> about -> page.tsx
 // and ...
