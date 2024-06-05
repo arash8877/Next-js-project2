@@ -16,7 +16,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <p style={{ backgroundColor: "lightblue", padding: "5rem" }}>Header</p>
+        </header>
+        {children}
+        <footer>
+          <p style={{ backgroundColor: "pink", padding: "5rem" }}>Footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
+
+
+// Layout is a UI that is shared between multiple pages in the app
+// in route localhost:3000, the {children} refers to app -> page.tsx -> Home component
+// in route localhost:3000/about, the {children} refers to app -> about -> page.tsx 
+// and ...
