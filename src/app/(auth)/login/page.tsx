@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default function Login() {
-  return <h1>Login</h1>;
+  return <h1 className="mt-10">Login Page</h1>;
 }
 
 //// using title metadata - "absolute" key ; see rootLayout

@@ -65,3 +65,7 @@ export default function RootLayout({
 // title metadata: for "default" key   ---> see blog/page.tsx and navigate to route http://localhost:3000/blog
 // title metadata: for "template" key  ---> see profile/page.tsx and navigate to route http://localhost:3000/profile
 // title metadata: for "absolute" key  ---> see auth/login/page.tsx and navigate to route http://localhost:3000/login
+
+//------------------------------- Active Link -----------------------------------
+
+//see app/(auth)/layout.tsx -- check localhost:3000/register

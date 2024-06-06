@@ -3,5 +3,5 @@
 // then your route will be localhost:3000/register
 
 export default function Register () {
-    return <h1>Register</h1>
+    return <h1 className="mt-10">Register Page</h1>
 }

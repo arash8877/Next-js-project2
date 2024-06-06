@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Products() {
   return (
     <>
-      <Link href="/" style={{ color: "white", background: "blue" }}>
+      <Link href="/" className="bg-blue-500 text-white">
         Home
       </Link>
       <h1>List of the products:</h1>
@@ -23,4 +23,4 @@ export default function Products() {
 
 
 // in Link there is a property called 'replace'. when you are in this link/product 
-// and click 'back', you redirect to the Home-page instead of product-list page.
+// and click 'back', you redirect to the Home-page instead of product-list page
