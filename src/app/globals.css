@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}

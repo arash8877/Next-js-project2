@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Products() {
   return (
-    <>
-      <Link href="/" className="bg-blue-500 text-white">
+    <div className="flex flex-col items-center gap-2 justify-between p-24">
+      <Link href="/" className="bg-gray-500 p-4 text-white rounded mb-5">
         Home
       </Link>
       <h1>List of the products:</h1>
@@ -17,7 +17,7 @@ export default function Products() {
         <Link href="/products/3" replace>Product 3</Link>
       </h2>
       <h2>.........</h2>
-    </>
+    </div>
   );
 }
 

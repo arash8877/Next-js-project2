@@ -68,4 +68,8 @@ export default function RootLayout({
 
 //------------------------------- Active Link -----------------------------------
 
-//see app/(auth)/layout.tsx -- check localhost:3000/register
+// see app/(auth)/layout.tsx -- check localhost:3000/register
+
+//------------------------------- Navigating Programmatically -----------------------------------
+
+// see app/order-product/page.tsx   (using useNavigation hook)
