@@ -73,3 +73,25 @@ export default function RootLayout({
 //------------------------------- Navigating Programmatically -----------------------------------
 
 // see app/order-product/page.tsx   (using useNavigation hook)
+
+//------------------------------- template -----------------------------------
+
+// layout keeps all the common elements. if you enter something (fx arash) in the register page, it will
+// be shown in other children (login and forgot-password)
+// if you need that some elements do'nt be shared with other children, you should use 'template' instead of 'layout'. 
+// all we have to do is rename layout to template.
+// example scenarios include: enter, exit, animations for Pages, running a side effect using the use effect 
+
+//------------------------------- Loading -----------------------------------
+
+// see app/blog/loading.tsx
+// show loading, meanwhile a specific rout segment's content is loading.
+// Nex.js allows the creation of shared layouts that remains interactive, while new route segments are loading.
+// user can continue interacting with certain parts such as navbar, sidebar, while main content is still being fetched.
+
+//------------------------------- Error -----------------------------------
+
+// see app/products/[productId]/reviews/[reviewId]/error.tsx  and   app/products/[productId]/reviews/[reviewId]/page.tsx
+// navigate this route a few times to see the error: localhost:3000/products/1/reviews/1
+// Error file, wraps a route segment and its nested children, and creates error UI tailored to specific segments.
+// it isolate errors to affected just that segment, while keeping the rest of the app functional.

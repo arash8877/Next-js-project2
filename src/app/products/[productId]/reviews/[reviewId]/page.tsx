@@ -1,9 +1,20 @@
 import { iParams } from "@/type/page";
+import { count } from "console";
 import { notFound } from "next/navigation";
 
+function getRandomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
+
 export default function ProductReviews({ params }: iParams) {
-    const ParamsReviewId = params.reviewId || "0"; // Default value if reviewId is undefined
-   
+  const ParamsReviewId = params.reviewId || "0"; // Default value if reviewId is undefined
+
+  //-----------make an error--------------
+  const random = getRandomInt(2);
+
+  if (random === 1) { throw new Error("*** error in loading review ***")}
+
+  //--------------------------------------
   if (parseInt(ParamsReviewId) > 1000) {
     notFound();
   }
@@ -14,9 +25,7 @@ export default function ProductReviews({ params }: iParams) {
   );
 }
 
-
-
 //If user wants to access to a route which we don't have in the app,
 //Next.js automatically redirect to the  "not-found" page under the hood.
-//if you want to 'programmatically' render a not-found page, based on a 
+//if you want to 'programmatically' render a not-found page, based on a
 //certain condition, we can use 'notFound function' from "next/navigation"
