@@ -3,6 +3,7 @@ interface iComplexParams {
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 }
 
 export default function ComplexDashboardLayout({
@@ -10,8 +11,14 @@ export default function ComplexDashboardLayout({
   users,
   revenue,
   notifications,
+  login
 }: iComplexParams) {
-  return (
+  const isLoggedIn = false;
+
+  console.log('isLoggedIn:', isLoggedIn); // Debug
+  console.log('login:', login); // Debug
+  
+  return (isLoggedIn ? (
     <div>
       <h1>{children}</h1>
       <div className="flex">
@@ -22,5 +29,11 @@ export default function ComplexDashboardLayout({
         <div className="flex flex-1">{notifications}</div>
       </div>
     </div>
-  );
+  ) : (
+    <div>{login}</div>
+  ));
 }
+
+
+
+// manually change the isLoggedIn between true and false.

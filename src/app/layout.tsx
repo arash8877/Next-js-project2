@@ -115,3 +115,8 @@ export default function RootLayout({
 // see app/complex-dashboard and its subfolders, focus on default.tsx files; see links below:
 // https://www.youtube.com/watch?v=NPtnJ6Ivv9k&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&index=29
 // https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs
+
+//------------------------------- conditional routes -----------------------------------
+
+// when a user logged in show the dashboard and when not logged in, show the login page.
+// see app/complex-dashboard/@login and app/complex-dashboard/layout.tsx
