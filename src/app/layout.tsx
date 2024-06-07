@@ -109,3 +109,9 @@ export default function RootLayout({
 // parallel routes in Next.js are defined using a feature called 'slot'. we need to name the folder like '@folder'
 // each slot is passed as a 'prop' to its corresponding layout.tsx file.
 // independent rout handling: each slot, can have its own loading and error states, without effecting on other slots.
+
+//------------------------------- Parallel Routes - unmatched routes -----------------------------------
+
+// see app/complex-dashboard and its subfolders, focus on default.tsx files; see links below:
+// https://www.youtube.com/watch?v=NPtnJ6Ivv9k&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&index=29
+// https://nextjs.org/docs/app/building-your-application/routing/parallel-routes#defaultjs

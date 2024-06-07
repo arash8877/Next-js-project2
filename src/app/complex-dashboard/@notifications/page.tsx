@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Notifications() {
   return (
     <Card>
-      <div>Notifications</div>
-      <div>
-        <Link href="/complex-dashboard/archived">Archived</Link>
+      <div className="flex flex-col relative">
+        <h1>Notifications</h1>
+        <Link href="/complex-dashboard/archived" className="absolute top-12 left-12 mt-12 text-xs text-red-600">Archived</Link>
       </div>
     </Card>
   );
