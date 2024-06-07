@@ -96,6 +96,7 @@ export default function RootLayout({
 // Error file, wraps a route segment and its nested children, and creates error UI tailored to specific segments.
 // it isolate errors to affected just that segment, while keeping the rest of the app functional.
 
-//------------------------------- Recovering Error --------------------------
-// see app/products/[productId]/reviews/[reviewId]/error.tsx 
-// added 'reset' prop and a button for error recovering
+//------------------------------- Recovering from Error --------------------------
+// see app/products/[productId]/reviews/[reviewId]/error.tsx added 'reset' prop and a button for recovering from error
+// an error bubble op to the closest parent error boundary
+// an error.tsx file, will cater to errors for all its nested child segments
