@@ -1,3 +1,5 @@
+"use client"; //to recover on client side by help of error-reset
+
 import { iParams } from "@/type/page";
 import { count } from "console";
 import { notFound } from "next/navigation";
