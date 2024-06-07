@@ -99,4 +99,13 @@ export default function RootLayout({
 //------------------------------- Recovering from Error --------------------------
 // see app/products/[productId]/reviews/[reviewId]/error.tsx added 'reset' prop and a button for recovering from error
 // an error bubble op to the closest parent error boundary
-// an error.tsx file, will cater to errors for all its nested child segments
+// an error.tsx file, will cater to errors for all its nested child segments, but the error boundary does not catch errors 
+// com from layout, as layout sets above the error boundary. To solve this issue, we should place the error.tsx file in the 
+// parent of of the layout. In this case we should move error.tsx file into 'product' folder.
+
+//------------------------------- Parallel Routes -----------------------------------
+
+// see app/complex-dashboard and its subfolders -- https://www.youtube.com/watch?v=8I5-OTNOni0&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&index=28
+// parallel routes in Next.js are defined using a feature called 'slot'. we need to name the folder like '@folder'
+// each slot is passed as a 'prop' to its corresponding layout.tsx file.
+// independent rout handling: each slot, can have its own loading and error states, without effecting on other slots.
