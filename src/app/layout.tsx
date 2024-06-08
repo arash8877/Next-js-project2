@@ -120,3 +120,16 @@ export default function RootLayout({
 
 // when a user logged in show the dashboard and when not logged in, show the login page.
 // see app/complex-dashboard/@login and app/complex-dashboard/layout.tsx
+
+//------------------------------- intercepting routes -----------------------------------
+
+// example: in a homepage if you click on login-button, first, you go to intercepting route 
+// means that you are still in the homepage, and a modal pops up for login; and your rout is
+// localhost:3000/login. if you refresh the page, you go to login page (not homepage with modal)
+// and your route still remains the same localhost:3000/login
+// to create a intercepting route in a same level,name the folder with (.) for example (.)f2 
+// to create a intercepting route in one level above, name the folder with (..) for example (..)f3 
+// to create a intercepting route in two level above, name the folder with (..)(..) 
+// to create a intercepting route to match segments from the root app directory, name the folder with (...), for example (...)about
+// /app/f1 and its children
+// https://www.youtube.com/watch?v=nr_kRfTJfKc&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&index=31
