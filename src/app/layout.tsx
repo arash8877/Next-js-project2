@@ -133,4 +133,4 @@ export default function RootLayout({
 // to create a intercepting route to match segments from the root app directory, name the folder with (...), for example (...)about
 // /app/f1 and its children
 // https://www.youtube.com/watch?v=nr_kRfTJfKc&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&index=31
-// parallel intercepting routes: app/photo-feed
+// parallel intercepting routes (example of photo-modal): app/photo-feed
